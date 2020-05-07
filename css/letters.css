@@ -1,0 +1,93 @@
+#a {
+  background: url("img/a.svg") center center no-repeat; }
+
+#b {
+  background: url("img/b.svg") center center no-repeat; }
+
+#c {
+  background: url("img/c.svg") center center no-repeat; }
+
+#d {
+  background: url("img/d.svg") center center no-repeat; }
+
+#e {
+  background: url("img/e.svg") center center no-repeat; }
+
+#f {
+  background: url("img/f.svg") center center no-repeat; }
+
+#g {
+  background: url("img/g.svg") center center no-repeat; }
+
+#h {
+  background: url("img/h.svg") center center no-repeat; }
+
+#i {
+  background: url("img/i.svg") center center no-repeat; }
+
+#j {
+  background: url("img/j.svg") center center no-repeat; }
+
+#k {
+  background: url("img/k.svg") center center no-repeat; }
+
+#l {
+  background: url("img/l.svg") center center no-repeat; }
+
+#m {
+  background: url("img/m.svg") center center no-repeat; }
+
+#n {
+  background: url("img/n.svg") center center no-repeat; }
+
+#o {
+  background: url("img/o.svg") center center no-repeat; }
+
+#p {
+  background: url("img/p.svg") center center no-repeat; }
+
+#q {
+  background: url("img/q.svg") center center no-repeat; }
+
+#r {
+  background: url("img/r.svg") center center no-repeat; }
+
+#s {
+  background: url("img/s.svg") center center no-repeat; }
+
+#t {
+  background: url("img/t.svg") center center no-repeat; }
+
+#u {
+  background: url("img/u.svg") center center no-repeat; }
+
+#v {
+  background: url("img/v.svg") center center no-repeat; }
+
+#w {
+  background: url("img/w.svg") center center no-repeat; }
+
+#x {
+  background: url("img/x.svg") center center no-repeat; }
+
+#y {
+  background: url("img/y.svg") center center no-repeat; }
+
+#z {
+  background: url("img/z.svg") center center no-repeat; }
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p,
+#q, #r, #s, #t, #u, #v, #w, #x, #y, #z {
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 0; }

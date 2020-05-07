@@ -1,0 +1,71 @@
+
+@import "letters.sass"
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&display=swap')
+
+@font-face
+  font-family: 'redfern'
+  src: url('//2ttf.com/webfont/LqAwjl8RDUK/webfont.ttf') format('truetype')
+
+$dark: #080e27
+$light: #00fbcb
+$pink: #ff30dc
+$purple: #291b93
+
+*
+  box-sizing: border-box
+
+body
+  background: $dark
+  color: $light
+  font-family: 'DM Mono', monospace
+
+section
+  width: 90%
+  margin: 0 auto
+  text-align: center
+  margin-top: 5rem
+  height: 90vh
+
+  h1
+    font-size: 1.75rem
+
+  #inputs
+    margin-top: 2rem
+    input
+      border: dashed 2px $light
+      background: $dark
+      color: $light
+      font-family: 'DM Mono', monospace
+      font-size: 1.1rem
+      text-align: center
+      padding: 0.8rem 0
+      width: 18rem
+      border-radius: 3px
+    button
+      border: none
+      padding: 1rem 1.1rem
+      font-size: 1.1rem
+      margin-left: 0.5rem
+      background: $light
+      border-radius: 3px
+      transition: all 300ms
+      &:hover
+        opacity: 0.7
+
+#letters
+  display: inline-block
+  border-radius: 5px
+  background: rgb(0,251,203)
+  background: linear-gradient(0deg, rgba(0,251,203,1) 0%, rgba(41,27,147,1) 100%)
+  height: 40rem
+  width: 22rem
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr
+  margin: 0 auto
+
+footer
+  text-align: center
+  font-size: 0.9rem
+  color: $purple
+  padding-bottom: 1rem

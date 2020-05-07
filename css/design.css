@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&display=swap");
+#a {
+  background: url("img/a.svg") center center no-repeat; }
+
+#b {
+  background: url("img/b.svg") center center no-repeat; }
+
+#c {
+  background: url("img/c.svg") center center no-repeat; }
+
+#d {
+  background: url("img/d.svg") center center no-repeat; }
+
+#e {
+  background: url("img/e.svg") center center no-repeat; }
+
+#f {
+  background: url("img/f.svg") center center no-repeat; }
+
+#g {
+  background: url("img/g.svg") center center no-repeat; }
+
+#h {
+  background: url("img/h.svg") center center no-repeat; }
+
+#i {
+  background: url("img/i.svg") center center no-repeat; }
+
+#j {
+  background: url("img/j.svg") center center no-repeat; }
+
+#k {
+  background: url("img/k.svg") center center no-repeat; }
+
+#l {
+  background: url("img/l.svg") center center no-repeat; }
+
+#m {
+  background: url("img/m.svg") center center no-repeat; }
+
+#n {
+  background: url("img/n.svg") center center no-repeat; }
+
+#o {
+  background: url("img/o.svg") center center no-repeat; }
+
+#p {
+  background: url("img/p.svg") center center no-repeat; }
+
+#q {
+  background: url("img/q.svg") center center no-repeat; }
+
+#r {
+  background: url("img/r.svg") center center no-repeat; }
+
+#s {
+  background: url("img/s.svg") center center no-repeat; }
+
+#t {
+  background: url("img/t.svg") center center no-repeat; }
+
+#u {
+  background: url("img/u.svg") center center no-repeat; }
+
+#v {
+  background: url("img/v.svg") center center no-repeat; }
+
+#w {
+  background: url("img/w.svg") center center no-repeat; }
+
+#x {
+  background: url("img/x.svg") center center no-repeat; }
+
+#y {
+  background: url("img/y.svg") center center no-repeat; }
+
+#z {
+  background: url("img/z.svg") center center no-repeat; }
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p,
+#q, #r, #s, #t, #u, #v, #w, #x, #y, #z {
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 0; }
+
+@font-face {
+  font-family: 'redfern';
+  src: url("//2ttf.com/webfont/LqAwjl8RDUK/webfont.ttf") format("truetype"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #080e27;
+  color: #00fbcb;
+  font-family: 'DM Mono', monospace; }
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+  height: 90vh; }
+  section h1 {
+    font-size: 1.75rem; }
+  section #inputs {
+    margin-top: 2rem; }
+    section #inputs input {
+      border: dashed 2px #00fbcb;
+      background: #080e27;
+      color: #00fbcb;
+      font-family: 'DM Mono', monospace;
+      font-size: 1.1rem;
+      text-align: center;
+      padding: 0.8rem 0;
+      width: 18rem;
+      border-radius: 3px; }
+    section #inputs button {
+      border: none;
+      padding: 1rem 1.1rem;
+      font-size: 1.1rem;
+      margin-left: 0.5rem;
+      background: #00fbcb;
+      border-radius: 3px;
+      -webkit-transition: all 300ms;
+      -o-transition: all 300ms;
+      transition: all 300ms; }
+      section #inputs button:hover {
+        opacity: 0.7; }
+
+#letters {
+  display: inline-block;
+  border-radius: 5px;
+  background: #00fbcb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#00fbcb), to(#291b93));
+  background: -webkit-linear-gradient(bottom, #00fbcb 0%, #291b93 100%);
+  background: -o-linear-gradient(bottom, #00fbcb 0%, #291b93 100%);
+  background: linear-gradient(0deg, #00fbcb 0%, #291b93 100%);
+  height: 40rem;
+  width: 22rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  margin: 0 auto; }
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #291b93;
+  padding-bottom: 1rem; }

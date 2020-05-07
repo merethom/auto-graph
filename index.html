@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script type="text/javascript" src="/scripts/script.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://kit.fontawesome.com/19e5932cd5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/design.css">
+
+</head>
+<body>
+
+<section>
+  <h1>auto graph</h1>
+
+  <div id="letters">
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    <div id="d"></div>
+    <div id="e"></div>
+    <div id="f"></div>
+    <div id="g"></div>
+    <div id="h"></div>
+    <div id="i"></div>
+    <div id="j"></div>
+    <div id="k"></div>
+    <div id="l"></div>
+    <div id="m"></div>
+    <div id="n"></div>
+    <div id="o"></div>
+    <div id="p"></div>
+    <div id="q"></div>
+    <div id="r"></div>
+    <div id="s"></div>
+    <div id="t"></div>
+    <div id="u"></div>
+    <div id="v"></div>
+    <div id="w"></div>
+    <div id="x"></div>
+    <div id="y"></div>
+    <div id="z"></div>
+  </div>
+
+  <div id="inputs">
+    <input type="text" id="myIntention" placeholder="Type your name...">
+    <button id="submitBtn" onclick="makeSigil()"><i class="fas fa-arrow-right"></i></button>
+  </div>
+  <!-- <p id="kitten"></p> -->
+</section>
+
+<footer>
+  &copy; merethom 2020
+</footer>
+
+
+
+
+
+</body>
+<script>
+
+//Takes input and executes makeSigil() function on keypress/click
+let input = document.getElementById("myIntention");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("submitBtn").click();
+  }
+});
+
+</script>
+</html>
