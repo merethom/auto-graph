@@ -163,7 +163,7 @@ footer {
   color: #291b93;
   padding-bottom: 1rem; }
 
-@media screen and (max-device-width: 500px) {
+@media screen and (max-device-width: 700px) {
   section {
     margin-top: 5rem; }
     section h1 {
