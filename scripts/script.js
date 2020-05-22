@@ -1,7 +1,12 @@
+
 //This array stores all the letters of the alphabet
 let alphabet = [
   "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
 ]
+
+//Create this as a global variable so we can define it in makeSigil()
+let doc;
+
 
 function convertInput(ogInput) {
   //1. We only need letters, so we will remove any numbers
@@ -25,8 +30,11 @@ function convertInput(ogInput) {
 }
 
 
-
+// ---------------------------------------------------------------------------//
 function makeSigil(){
+
+  // Re-assigns value to the global variable every time the function is run.
+  doc = new jsPDF();
 
   //1. Reset all letters and make opacity 0
   for (i = 0; i < alphabet.length; i++) {
@@ -40,12 +48,49 @@ function makeSigil(){
   let putIntoArray = Array.from(trimmedIntention);
   //5. Change the opacity of the background image when the string is present
   putIntoArray.forEach((item, i) => {
+    //For each letter in the input, change opacity so letter shows
     let position = alphabet.indexOf(item);
     document.getElementById(alphabet[position]).style.opacity = "1";
-    //console.log(alphabet[position]);
-    //console.log(putIntoArray[i]);
+    //Add each letter to a downloadable PDF
+    doc.addImage(arrayOfLetterImages[position], 'PNG', 75, 55, 60, 110);
   })
-  //console.log(intention);
-  // document.getElementById("kitten").innerHTML = intention;
 
-} //End function
+  document.getElementById("download").style.opacity = "1";
+}
+// ---------------------------------------------------------------------------//
+
+
+// -----------------------------------------------------------------------//
+//Downloads the PDF when we press a button
+function saveAsPDF() {
+  //Names the PDF whatever the user inputs into the sigil
+  let nameOfPDF = document.getElementById("myIntention").value.replace(/\s/g, '');
+  console.log(nameOfPDF);
+
+  let originalInputFromUser = document.getElementById("myIntention").value;
+  //Eventually replace this with the input from the form
+  doc.setFillColor(8, 14, 39);
+  doc.setFontSize(15);
+  doc.text('' + originalInputFromUser, 105, 180, 'center');
+
+  //Copyright information
+  doc.setFontSize(7);
+  doc.text('created by @merethom  /  © ' + yearIs, 105, 290, 'center');
+
+  //Now we save the PDF
+  doc.save(nameOfPDF+'.pdf');
+
+}
+// -----------------------------------------------------------------------//
+
+
+//Takes input and executes makeSigil() function on keypress/click
+let input = document.getElementById("myIntention");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("submitBtn").click();
+  }
+});
+
+console.log(input);

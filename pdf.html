@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="https://kit.fontawesome.com/19e5932cd5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/design.css">
+
+</head>
+<body>
+  <script src="scripts/letters.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+
+
+  <button onclick="saveAsPDF()"> Download As PDF</button>
+
+
+  <script>
+
+    // -----------------------------------------------------------------------//
+    // PRINTING information
+
+    // Creates a variable that will be printed.
+    let doc = new jsPDF();
+
+    //Eventually replace this with the input from the form
+    doc.setFillColor(8, 14, 39);
+    doc.setFontSize(20);
+    doc.text('auto graph', 105, 200, 'center');
+
+    //Copyright information
+    doc.setFontSize(7);
+    doc.text('created by @merethom  /  © ' + yearIs, 105, 290, 'center');
+    // -----------------------------------------------------------------------//
+
+    //Adds in an image
+    doc.addImage(letterA, 'JPEG', 75, 55, 60, 110);
+
+    //Downloads the PDF when we press a button
+    function saveAsPDF() {
+      let nameOfPDF = "test";
+      doc.save(nameOfPDF+'.pdf');
+    }
+
+  </script>
+
+
+</body>
+
+</html>

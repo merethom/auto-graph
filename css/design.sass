@@ -2,9 +2,6 @@
 @import "letters.sass"
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;1,500&display=swap')
 
-@font-face
-  font-family: 'redfern'
-  src: url('//2ttf.com/webfont/LqAwjl8RDUK/webfont.ttf') format('truetype')
 
 $dark: #080e27
 $light: #00fbcb
@@ -26,11 +23,9 @@ section
   margin-top: 5rem
   height: 90vh
 
-  h1
-    font-size: 1.75rem
 
   #inputs
-    margin-top: 2rem
+    margin-bottom: 2rem
     input
       border: dashed 2px $light
       background: $dark
@@ -51,6 +46,26 @@ section
       transition: all 300ms
       &:hover
         opacity: 0.7
+
+  #download
+    margin-top: 2rem
+    opacity: 0
+    transition: all 3s
+
+    button
+      font-family: 'DM Mono', monospace
+      border: none
+      width: 22rem
+      padding: 1rem 1.1rem
+      font-size: 1.1rem
+      background: lighten($purple, 20)
+      border-radius: 3px
+      transition: all 300ms
+      &:hover
+        opacity: 0.7
+      i
+        color: $light
+
 
 #letters
   display: inline-block

@@ -93,10 +93,6 @@
   transition: all 1s;
   opacity: 0; }
 
-@font-face {
-  font-family: 'redfern';
-  src: url("//2ttf.com/webfont/LqAwjl8RDUK/webfont.ttf") format("truetype"); }
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -112,10 +108,8 @@ section {
   text-align: center;
   margin-top: 5rem;
   height: 90vh; }
-  section h1 {
-    font-size: 1.75rem; }
   section #inputs {
-    margin-top: 2rem; }
+    margin-bottom: 2rem; }
     section #inputs input {
       border: dashed 2px #00fbcb;
       background: #080e27;
@@ -138,6 +132,27 @@ section {
       transition: all 300ms; }
       section #inputs button:hover {
         opacity: 0.7; }
+  section #download {
+    margin-top: 2rem;
+    opacity: 0;
+    -webkit-transition: all 3s;
+    -o-transition: all 3s;
+    transition: all 3s; }
+    section #download button {
+      font-family: 'DM Mono', monospace;
+      border: none;
+      width: 22rem;
+      padding: 1rem 1.1rem;
+      font-size: 1.1rem;
+      background: #4c39db;
+      border-radius: 3px;
+      -webkit-transition: all 300ms;
+      -o-transition: all 300ms;
+      transition: all 300ms; }
+      section #download button:hover {
+        opacity: 0.7; }
+      section #download button i {
+        color: #00fbcb; }
 
 #letters {
   display: inline-block;
